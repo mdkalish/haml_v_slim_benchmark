@@ -2,6 +2,7 @@ require 'haml'
 require 'slim'
 require 'tilt'
 require 'benchmark'
+require 'action_view'
 include Benchmark
 
 puts "\n7 TESTS, 100_000 ITERATIONS FOR EACH FILE (HTML, HAML, SLIM)\n"
@@ -62,7 +63,6 @@ slim6 = Tilt.new('views/6.slim')
 
 # ROUND 7: + actionview helpers
 
-require_relative '/Users/Maciej/.rvm/gems/ruby-2.2.3/gems/actionview-4.2.4/lib/action_view.rb'
 include ActionView::Helpers
 include ActionView::RoutingUrlFor
 

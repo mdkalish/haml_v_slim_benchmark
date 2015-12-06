@@ -50,3 +50,11 @@ Here are my results obtained on [Mac Air Early 2015](http://www.everymac.com/sys
 7haml      318.120000   2.140000 320.260000 (321.500494)
 7slim      389.790000   3.160000 392.950000 (401.462821)
 ```
+
+### Caveats:
+
+- limited scope:
+```bash
+$ ruby -v
+ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-darwin14]
+```

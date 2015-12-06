@@ -42,10 +42,10 @@ Here are my results obtained on [Mac Air Early 2015](http://www.everymac.com/sys
 ### Caveats:
 
 - Limited scope:
-  ```bash
-  $ ruby -v
-  ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-darwin14]
-  ```
+```bash
+$ ruby -v
+ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-darwin14]
+```
 - Template rendering is most often not a bottleneck anyways: after the first render,
   contents will be loaded from cache as ready htmls.
   Fragment caching is not accounted for in this benchmark.

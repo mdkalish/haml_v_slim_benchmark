@@ -32,9 +32,7 @@ Here are my results obtained on [Mac Air Early 2015](http://www.everymac.com/sys
 4. ACTIONVIEW HELPERS
                 user     system      total        real
 4haml      340.240000   3.570000 343.810000 (349.603613)
-4slim
-
-380.680000   2.870000 383.550000 (388.684576)
+4slim      380.680000   2.870000 383.550000 (388.684576)
 
 5. VARIABLES
                 user     system      total        real

@@ -2,6 +2,7 @@ To run this on your machine:
 ```bash
 $ git clone https://github.com/mdkalish/haml_v_slim_benchmark
 $ cd haml_v_slim_benchmark/
+$ bundle
 $ pry
 [1] pry(main)> load 'haml_v_slim_benchmark.rb'
 ```

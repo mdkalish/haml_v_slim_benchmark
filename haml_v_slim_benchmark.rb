@@ -43,7 +43,7 @@ slim5 = Tilt.new('views/5.slim')
 
 # BENCHMARKS
 
-puts "\n4 TESTS, 100_000 ITERATIONS EACH\n"
+puts "\n5 TESTS, 100_000 ITERATIONS EACH\n"
 
 Benchmark.benchmark(title(1, 'EMPTY FILES'), 10, FORMAT) do |x|
   x.report('1html:') do

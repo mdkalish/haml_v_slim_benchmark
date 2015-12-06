@@ -1,14 +1,18 @@
-= link_to 'subpage', url_for('subpage_url')
-= content_tag(:p, "Hello world!")
-= date_select("article", "written_on", selected: Date.today)
-= datetime_select("article", "written_on", prompt: {day: 'Choose day', month: 'Choose month', year: 'Choose year'})
-= simple_format('<a href="http://example.com/">Example</a>')
+%ol
+  - for i in 1..1000 do
+    %li= "#{i}. Ordered item"
+
+%ul
+  - j = 0
+  - while j <= 1000 do
+    - j += 1
+    %li= "#{j}. Unordered item"
 
 / Latest compiled and minified CSS
-%link{:href => "../../../../css_frameworks/bootstrap-3.3.6-dist/css/bootstrap.min.css", :rel => "stylesheet"}/
+%link{:href => "../bootstrap-3.3.6-dist/css/bootstrap.min.css", :rel => "stylesheet"}/
 / Latest compiled and minified JavaScript
-%script{:src => "../../../../jquery/jquery-2.1.4.min.js"}
-%script{:src => "../../../../css_frameworks/bootstrap-3.3.6-dist/js/bootstrap.min.js"}
+%script{:src => "../jquery/jquery-2.1.4.min.js"}
+%script{:src => "../bootstrap-3.3.6-dist/js/bootstrap.min.js"}
 #accordion.panel-group{"aria-multiselectable" => "true", :role => "tablist"}
   .panel.panel-default
     #headingOne.panel-heading{:role => "tab"}

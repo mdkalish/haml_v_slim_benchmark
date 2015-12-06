@@ -17,9 +17,9 @@ end
 
 for i in 1..4 do # rubocop:disable Style/For
 
-  html = Tilt.new("#{i}.html")
-  haml = Tilt.new("#{i}.haml")
-  slim = Tilt.new("#{i}.slim")
+  html = Tilt.new("views/#{i}.html")
+  haml = Tilt.new("views/#{i}.haml")
+  slim = Tilt.new("views/#{i}.slim")
 
   title = "\n#{i}. #{round_caption(i - 1)}\n#{' ' * 10}#{CAPTION}"
   Benchmark.benchmark(title, 10, FORMAT) do |x|
@@ -39,8 +39,8 @@ end
 
 # ROUND 5: + ruby for and while loops, 2 x 1000
 
-haml5 = Tilt.new('5.haml')
-slim5 = Tilt.new('5.slim')
+haml5 = Tilt.new('views/5.haml')
+slim5 = Tilt.new('views/5.slim')
 
 # ROUND 6: + variables
 
@@ -57,8 +57,8 @@ end
 person = Person.new(first_name = 'Tomek', last_name = 'Nowak', age = 30)
 # rubocop:enable Lint/UselessAssignment
 
-haml6 = Tilt.new('6.haml')
-slim6 = Tilt.new('6.slim')
+haml6 = Tilt.new('views/6.haml')
+slim6 = Tilt.new('views/6.slim')
 
 # ROUND 7: + actionview helpers
 
@@ -66,8 +66,8 @@ require_relative '/Users/Maciej/.rvm/gems/ruby-2.2.3/gems/actionview-4.2.4/lib/a
 include ActionView::Helpers
 include ActionView::RoutingUrlFor
 
-haml7 = Tilt.new('7.haml')
-slim7 = Tilt.new('7.slim')
+haml7 = Tilt.new('views/7.haml')
+slim7 = Tilt.new('views/7.slim')
 
 #
 

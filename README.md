@@ -1,3 +1,11 @@
+To run this on your machine:
+```bash
+$ cd haml_v_slim/ && pry
+[1] pry(main)> load 'haml_v_slim_benchmark.rb'
+```
+
+Here are my results obtained on [Mac Air Early 2015](http://www.everymac.com/systems/apple/macbook-air/specs/macbook-air-core-i7-2.2-13-early-2015-specs.html):
+
 7 TESTS, 100_000 ITERATIONS FOR EACH FILE (HTML, HAML, SLIM)
 
 1.  EMPTY FILES

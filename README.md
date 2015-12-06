@@ -6,6 +6,7 @@ $ cd haml_v_slim/ && pry
 
 Here are my results obtained on [Mac Air Early 2015](http://www.everymac.com/systems/apple/macbook-air/specs/macbook-air-core-i7-2.2-13-early-2015-specs.html):
 
+```bash
 7 TESTS, 100_000 ITERATIONS FOR EACH FILE (HTML, HAML, SLIM)
 
 1.  EMPTY FILES
@@ -46,3 +47,4 @@ Here are my results obtained on [Mac Air Early 2015](http://www.everymac.com/sys
                 user     system      total        real
 7haml      318.120000   2.140000 320.260000 (321.500494)
 7slim      389.790000   3.160000 392.950000 (401.462821)
+```

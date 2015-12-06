@@ -1,6 +1,8 @@
 To run this on your machine:
 ```bash
-$ cd haml_v_slim/ && pry
+$ git clone https://github.com/mdkalish/haml_v_slim_benchmark
+$ cd haml_v_slim_benchmark/
+$ pry
 [1] pry(main)> load 'haml_v_slim_benchmark.rb'
 ```
 

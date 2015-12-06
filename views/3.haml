@@ -1,19 +1,9 @@
-/ Latest compiled and minified CSS
-%link{:href => "../bootstrap-3.3.6-dist/css/bootstrap.min.css", :rel => "stylesheet"}/
-.container
-  .jumbotron
-    %h1 My First Bootstrap Page
-    %p Resize this responsive page to see the effect!
-  .row
-    .col-sm-4
-      %h3 Column 1
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-      %p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
-    .col-sm-4
-      %h3 Column 2
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-      %p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
-    .col-sm-4
-      %h3 Column 3
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
-      %p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+%ol
+  - for i in 1..100 do
+    %li= "#{i}. Ordered item"
+
+%ul
+  - j = 0
+  - while j <= 100 do
+    - j += 1
+    %li= "#{j}. Unordered item"

@@ -3,8 +3,7 @@ To run this on your machine:
 $ git clone https://github.com/mdkalish/haml_v_slim_benchmark
 $ cd haml_v_slim_benchmark/
 $ bundle
-$ pry
-[1] pry(main)> load 'haml_v_slim_benchmark.rb'
+$ ./run.sh
 ```
 
 Here are my results obtained on [Mac Air Early 2015](http://www.everymac.com/systems/apple/macbook-air/specs/macbook-air-core-i7-2.2-13-early-2015-specs.html):
@@ -47,6 +46,6 @@ Here are my results obtained on [Mac Air Early 2015](http://www.everymac.com/sys
   $ ruby -v
   ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-darwin14]
   ```
-- Template rendering is not a bottleneck anyways: after the first render,
+- Template rendering is most often not a bottleneck anyways: after the first render,
   contents will be loaded from cache as ready htmls.
   Fragment caching is not accounted for in this benchmark.

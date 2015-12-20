@@ -57,15 +57,14 @@ ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-darwin14]
 - Slim is **much** cleaner
 - Slim supports HTML streaming, HAML doesn't
 - Haml would be Slim if it were well-written, but it isn't
+- Using Haml can be rationalised only by a habit. It has been around for a longer time than Slim and this is the only reason it is still in use.
 
-#### Why everybody is not switching to Slim?
+#### Why is everybody not switching to Slim?
 
 - No one cares about promoting Slim. [The author wrote it for his own use]  (https://github.com/slim-template/slim/issues/386#issuecomment-16690419).
 - Haml has been around for a much longer time and programmers are very conservative people. In general we have much trouble with accepting new things, no matter if better or worse. ([From Crockford](https://www.youtube.com/watch?v=JxAXlJEmNMg))
 
 #### Conclusion:
-
-Using Haml can be rationalised only by a habit. It has been around for a longer time than Slim and this is the only reason it is still in use.
 
 Use Haml if:
   - don't use Haml

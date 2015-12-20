@@ -39,7 +39,7 @@ Here are my results obtained on [Mac Air Early 2015](http://www.everymac.com/sys
 5slim        1.580000   0.010000   1.590000 (  1.585720)
 ```
 
-### Caveats:
+### Caveats to the benchmark:
 
 - Limited scope:
 ```bash
@@ -49,3 +49,32 @@ ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-darwin14]
 - Template rendering is most often not a bottleneck anyways: after the first render,
   contents will be loaded from cache as ready htmls.
   Fragment caching is not accounted for in this benchmark.
+
+
+### BREAKDOWN
+
+- Slim is **much** faster
+- Slim is **much** cleaner
+- Slim supports HTML streaming, HAML doesn't
+- Haml would be Slim if it were well-written, but it isn't
+
+#### Why everybody is not switching to Slim?
+
+- No one cares about promoting Slim. [The author wrote it for his own use]  (https://github.com/slim-template/slim/issues/386#issuecomment-16690419).
+- Haml has been around for a much longer time and programmers are very conservative people. In general we have much trouble with accepting new things, no matter if better or worse. ([From Crockford](https://www.youtube.com/watch?v=JxAXlJEmNMg))
+
+#### Conclusion:
+
+Using Haml can be rationalised only by a habit. It has been around for a longer time than Slim and this is the only reason it is still in use.
+
+Use Haml if:
+  - don't use Haml
+  - it has nothing to trump Slim but the length of service
+
+Use Slim if:
+  - you want lightning-fast parsing (almost as fast as ERB, up to 9 times faster than Haml)
+  - you care about readibility and aesthetics
+
+Further reading:
+- [Very extensive, comprehensive, and detailed benchmark](https://sephinrothcn.wordpress.com/2014/04/14/slim-vs-haml-performance-perspective/). The bottom line is Slim is maybe the best and Haml is definitely the worst.
+- There is [Hamlit gem](https://github.com/k0kubun/hamlit) which is an attempt to _slim the Haml_, said to be almost 9 times faster than Haml, thus also faster than Erb and Slim, but it's a young project (started in March 2015) **with limitations**.
